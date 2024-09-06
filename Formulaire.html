@@ -13,19 +13,191 @@
   </head>
   <body>
     <header>
-      <img src="./images/le_logo_finit.png" alt="LogoADRAR">
-      <div class="container">
-        <div class="btn"><a href="accueil.html">Accueil</a></div>
-        <div class="btn"><a href="Html.html">HTML</a></div>
-        <div class="btn"><a href="Css.html">CSS</a></div>
-        <div class="btn"><a href="JavascriptL.html">JavaScript</a></div>
-        <div class="btn"><a href="Api.html">API</a></div>
-        <div class="btn"><a href="Formulaire.html">Contact</a></div>
-      </div>
-  </header>
+      <nav>
+        <div class="navbar">
+          <div class="cont nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>
+            <div class="logo">
+              <img src="./images/le_logo_finit.png" alt="LogoADRAR">
+            </div>
+            <div class="container">
+              <div class="btn"><a href="accueil.html">Accueil</a></div>
+              <div class="btn"><a href="Html.html">HTML</a></div>
+              <div class="btn"><a href="Css.html">CSS</a></div>
+              <div class="btn"><a href="JavascriptL.html">JavaScript</a></div>
+              <div class="btn"><a href="Api.html">API</a></div>
+              <div class="btn"><a href="Formulaire.html">Contact</a></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main>
+      <h1>Nous contacter:</h1>
       
-    </main>
-    <footer></footer>
+      <form action="envoie au php que nous n'avons pas.php">
+
+          <fieldset>
+          
+
+              <div id="blocInfoPerso">
+
+                  <!--classe info perso  -->
+                  <div class="NPD">
+                      <!-- NOM -->
+                      <label for="nom">Nom:</label>
+                      <input type="text" name="nom" placeholder="entrez votre nom ici">
+                  </div>
+
+                  <!--classe info perso  -->
+                  <div class="NPD">
+                      <!-- PRENOM -->
+                      <label for="prenom">Prénom:</label>
+                      <input type="text" name="prenom" placeholder="entrez votre prénom ici" maxlength="20">
+                  </div>
+
+                  <!--classe info perso  -->
+                  <div class="NPD">
+                      <!-- DATE DE NAISSANCE-->
+                      <label for="dateNaissance">Date de Naissance:</label>
+                      <input type="date" name="dateNaissance" id="dn"> <br/>
+                  </div>
+
+              </div>
+
+          <div id="blocAdresse">
+
+              <div class="AVC">
+                  <!-- ADRESSE DOMICILE-->
+                  <label for="adresse">Adresse domicile:</label>
+                  <input type="text" name="adresse" placeholder="Ex: 11 rue des cagettes ">
+              </div>
+
+              <div class="AVC">
+                  <!-- VILLE-->
+                  <label for="ville">Ville:</label>
+                  <input type="text" name="ville" placeholder="Ex: Toulouse">
+              </div>
+
+              <div class="AVC">
+                  <!-- CODE POSTALE-->
+                  <label for="codeP">Code postale:</label>
+                  <input type="tel"name="codeP" placeholder="Ex: 31300" minlength="5" maxlength="5"> <br/>
+              </div>
+
+          </div>
+
+
+          <div id="blocContact">
+              
+              <div class="et">
+                  <!-- ADRESSE MAIL-->
+                  <label for="email">Adresse e-mail:</label>
+                  <input type="text" name="email" placeholder="Ex: Patique@gmail.com" >
+              </div>
+
+              <div class="et">
+                  <!-- NUMEROS DE TELEPHONE-->
+                  <label for="tel">Numéros téléphone:</label>
+                  <input type="tel"name="tel" placeholder="Ex: 06.56.09.18.47" minlength="10" maxlength="10"> <br/>
+              </div>
+          </div>
+
+
+          <div id="blocAutorisation">
+
+              <div class="contactMT">
+                  <!-- CHECKBOX CONTACTE PAR MAIL-->
+                  <label for="contactM">Autoriser à être contacté par e-mail:</label>
+                  <input type="checkbox" name="contactM" id="contactM">
+              </div>
+
+              <div class="contactMT">
+                  <!-- CHECKBOX CONTACTE PAR TELEPHONE-->
+                  <label for="contactT">Autoriser à être contacté par téléphone:</label>
+                  <input type="checkbox" name="contactT" id="contactT"> <br/>
+              </div>
+          </div>
+
+          <div id="formation">
+              <!-- MENU DEROULANT CHOIX DE FORMATION-->
+              <div class="deroule">
+                  <label for="fomration">Choisire votre formation:</label>           
+                  <select name="Formations" id="choixFormation">
+
+                  <!-- FORMATION BTP-->
+                      <optgroup label="BTP">
+                          <option value="option 1">CAP maçon</option>
+                          <option value="option 1">CAP plomberie</option>
+                          <option value="option 1">CAP serrurie</option>
+                          <option value="option 1">BAC PRO plomberie</option>
+                          <option value="option 1">BAC PRO menuiserie</option>
+                      </optgroup>
+                  
+                      <!-- FORMATION NUMERIQUE-->
+                      <optgroup label="Numérique">
+                          <option value="option 1">BAC+2 dev web</option>
+                          <option value="option 1">BAC+2 cyber sécurité</option>
+                          <option value="option 1">BAC+2 réseaux</option>
+                          <option value="option 1">BAC+3 web design</option>
+                          <option value="option 1">BAC+3 dev opérateur</option>
+                      </optgroup>
+                  </select>
+              </div>
+          </div>
+
+          <div id="er">
+              <!-- boutton envoyer -->
+              <input type="submit" value="Envoyer" class="buttonER">
+
+              <!-- boutton reset -->
+              <input type="Reset" class="buttonER">
+          </div>
+
+          </fieldset>
+      </form>
+  </main>
+    <footer>
+      <ul>
+        <li>
+          <span>L'ADRAR</span>
+          <ul>
+            <li><a href="https://www.adrar-formation.com/qui-sommes-nous/">A propos</a></li>
+            <li><a href="https://www.adrar-formation.com/nos-certifications/">Nos certifications</a></li>
+            <li><a href="https://www.adrar-formation.com/formations-a-distance/">Formations à distance</a></li>
+            <li><a href="https://www.adrar-formation.com/offres-demploi/">Nos offres d'emploi</a></li>
+            <li><a href="https://www.adrar-formation.com/enquete-de-satisfaction/">Enquête de satisfaction</a></li>
+            <li><a href="https://www.adrar-formation.com/engagements-politique-objectifs-indicateurs-pour-reussir/">Engagements</a></li>
+          </ul>
+        </li>
+        <li>
+          <span>Liens Utiles</span>
+          <ul>
+            <li><a href="https://www.adrar-formation.com/compte-personnel-de-formation/">CPF</a></li>
+            <li><a href="https://www.adrar-numerique.com/">Digital Academy</a></li>
+            <li><a href="https://www.adrar-formation.com/blog/">Blog</a></li>
+            <li><a href="https://www.adrar-formation.com/contact/">Contact</a></li>
+          </ul>
+        </li>
+        <li>
+          <span>Nos Centres</span>
+          <ul>
+            <li><a href="https://www.adrar-formation.com/">ADRAR Formation (siège)</a></li>
+            <li><a href="https://www.adrar-formation.com/">ADRAR Pôle Numérique</a></li>
+            <li><a href="https://www.adrar-formation.com/centre-formation-toulouse/">ADRAR Toulouse Centre</a></li>
+            <li><a href="https://www.adrar-formation.com/centre-formation-perpignan/">ADRAR Perpignan</a></li>
+            <li><a href="https://www.adrar-formation.com/formation-montpellier/">ADRAR Montpellier</a></li>
+            <li><a href="https://www.adrar-formation.com/formation-tarbes/">ADRAR Tarbes</a></li>
+            <li><a href="https://www.adrar-formation.com/">ADRAR Toulouse Campus</a></li>
+            <li><a href="https://www.adrar-formation.com/centre-formation-carcassonne/">ADRAR Carcassonne</a></li>
+          </ul>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
