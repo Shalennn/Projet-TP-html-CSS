@@ -328,6 +328,7 @@ footer{
 .container .btn:nth-child(6), 
 .container .btn:nth-child(6){
     background: #e51eff;
+    border-radius: 30px;
     box-shadow: 0 0 5px #e51eff,
                 0 0 15px #e51eff,
                 0 0 30px #e51eff,
