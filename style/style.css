@@ -16,6 +16,7 @@ header{
     width: 100%;
     border-bottom: 2px solid black;
     nav div div img{
+        padding-top:5px;
         position: absolute;
         top: 20%;
         left: 2%; 
@@ -128,9 +129,9 @@ footer{
     border-top: 1px solid rgba(255,255,255,0.01);
     border-bottom: 1px solid rgba(255,255,255,0.01);
     border-radius: 30px;
-    color: #fff;
+    color: #000000;
     z-index: 1;
-    font-weight: 400;
+    font-weight: bold;
     letter-spacing: 1px;
     text-decoration: none;
     overflow: hidden;
@@ -256,6 +257,14 @@ footer{
                 0 0 60px #e51eff;
 }
 /*-----------Responsive+Burger-----------*/
+@media screen and (max-width: 1380px){
+    .logo{
+        img{
+            padding-top: 20px;
+            transform: scale(1.5);
+        } 
+      }
+}
 
 @media screen and (max-width: 900px) {
     * {
@@ -355,7 +364,7 @@ footer{
       
       .navbar .container {
         padding-top: 120px;
-        box-shadow: inset 0 0 2000px rgba(52, 230, 253, 0.5);
+        box-shadow: inset 0 0 2000px rgb(52, 230, 253);
         height: 100vh;
         width: 140%;
         transform: translate(-150%);
@@ -378,6 +387,10 @@ footer{
         top: 5px;
         right: 15px;
         transition: 0.5s;
+        img{
+            padding-top: 8px;
+            transform: scale(0.8);
+        }
       }
       
       .nav-container input[type="checkbox"]:checked ~ .container {
