@@ -100,8 +100,8 @@
     transition-delay: 0.5s;
 }
 
-.container .btn:nth-child(1), 
-.container .btn:nth-child(1){
+.container .btn:nth-child(1)::before, 
+.container .btn:nth-child(1)::after{
     background: #ff1f71;
     border-radius: 30px;
     box-shadow: 0 0 5px #ff1f71,
@@ -137,8 +137,9 @@
                 0 0 60px #e9ff1e;
 }
 
-.container .btn:nth-child(5)::before, 
-.container .btn:nth-child(5)::after{
+.container .btn:nth-child(5), 
+.container .btn:nth-child(5){
+    border-radius: 30px;
     background: #65ff1e;
     box-shadow: 0 0 5px #65ff1e,
                 0 0 15px #65ff1e,
