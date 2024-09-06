@@ -148,6 +148,7 @@
 
 .container .btn:nth-child(6), 
 .container .btn:nth-child(6){
+    border-radius: 30px;
     background: #e51eff;
     box-shadow: 0 0 5px #e51eff,
                 0 0 15px #e51eff,
