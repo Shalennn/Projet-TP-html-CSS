@@ -192,9 +192,19 @@ main{
 
     div{
         margin-bottom: 50px;
-        border: solid black;
     }
-
+    p{
+        font-family: kantumuy Pro ;
+        border-radius: 15px;
+        padding: 20px;
+        background-color: rgb(175, 175, 175);
+    }
+    ul, ol{
+        font-family: kantumuy Pro ;
+        border-radius: 15px;
+        padding: 20px;
+        background-color: rgb(175, 175, 175);
+    }
     .box{
         display: flex;
         align-items: center;
@@ -205,4 +215,15 @@ main{
     }
 }
 
+/*------------------------RESPONSIVE--------------------------------*/
+@media only screen and (max-width: 800px){
+
+    main{
+        padding-top: 200px;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
