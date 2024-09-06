@@ -177,3 +177,9 @@ header{
         margin: -30px 15px -15px 15px;
     }
 }
+main{
+    font-family: "Kantumruy Pro", sans-serif;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 10vw 15px 10vw;

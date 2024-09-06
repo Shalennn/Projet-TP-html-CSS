@@ -177,5 +177,25 @@ header{
         margin: -30px 15px -15px 15px;
     }
 }
+main{
+    font-family: "Kantumruy Pro", sans-serif;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 10vw 15px 10vw;
+    div{
+        margin-bottom: 50px;
+        border: solid black;
+    }
+    .box{
+        display: flex;
+        align-items: center;
+    }
+    img{
+        width: 300px;
+    }
+}
+
+
 
 /*-------------------------------  FOOTER  ------------------------------------------------*/
